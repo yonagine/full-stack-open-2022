@@ -1,0 +1,21 @@
+title New Note (Single page app)
+note over browser:
+Clicking the submit button will
+submit a POST request containing
+the user input to the server
+(JSON content-type header)
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+No redirect unlike before
+and instead returns
+201 Created.
+end note
+server-->browser: 201 Created
+note over browser:
+This time, the page doesn't reload.
+end note
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
